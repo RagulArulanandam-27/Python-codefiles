@@ -43,4 +43,16 @@
 #         print(cache_list)
 
 
-# cache_progra
+d = {
+            1: ['A', 'C', 'B', 'D'],
+            2: ['A', 'B', 'D', 'C'],
+            3: ['C', 'B', 'A', 'D'],
+            4: ['B', 'A', 'D', 'C']
+        }
+unique_list = set()
+for pref in d.values():
+    for canditate in pref:
+        unique_list.add(canditate)
+
+
+print(list(unique_list))
